@@ -9,9 +9,7 @@
 		// build directory
 		"directory": "./build/",
 		// 404 page
-		"not_found_handling": "404-page",
-		// function binding
-		"binding": "ASSETS"
+		"not_found_handling": "404-page"
 	},
 	"observability": {
 		"enabled": false
