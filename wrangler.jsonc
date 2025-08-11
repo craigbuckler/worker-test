@@ -1,0 +1,22 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"name": "worker-test",
+	"compatibility_date": "2025-08-10",
+	"assets": {
+		// build directory
+		"directory": "./build/",
+		// 404 page
+		"not_found_handling": "404-page",
+		// function binding
+		"binding": "ASSETS"
+	},
+	"observability": {
+		"enabled": false
+	},
+	"vars": {
+		"NODE_ENV": "production"
+	}
+}

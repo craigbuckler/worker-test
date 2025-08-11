@@ -1,0 +1,28 @@
+{
+  "name": "worker-test",
+  "version": "1.0.0",
+  "description": "Cloudflare static site worker test",
+  "homepage": "https://github.com/craigbuckler/worker-test#readme",
+  "bugs": {
+    "url": "https://github.com/craigbuckler/worker-test/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craigbuckler/worker-test.git"
+  },
+  "license": "MIT",
+  "author": "Craig Buckler",
+  "type": "module",
+  "main": "publican.config.js",
+  "scripts": {
+    "build": "node --env-file=.env.dev --env-file=.env.prod ./publican.config.js",
+    "start": "node --env-file=.env.dev ./publican.config.js"
+  },
+  "dependencies": {
+    "esbuild": "0.25.8",
+    "publican": "0.10.2"
+  },
+  "devDependencies": {
+    "livelocalhost": "1.2.2"
+  }
+}
